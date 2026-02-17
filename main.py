@@ -17,7 +17,9 @@ for i in content:
 
 words=set(words)
 words=list(words)
+words=sorted(words)
 print(words)
+
 
 
 
