@@ -13,10 +13,9 @@ length=int(input("Enter Length of Words:"))
 list=[]
 for i in content:
     if(len(i)==length):
-        list.append(i)
+        list.append(i.lower())
 
-list=set(list)
- #list=list(list)
+list=list.sort()
 print(list)
 
 
