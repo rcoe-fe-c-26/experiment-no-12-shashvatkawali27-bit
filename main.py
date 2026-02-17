@@ -6,7 +6,7 @@
 
 print("--- Extracting Words from Text File ---\n")
 with open("story.txt") as f:
-    content=f.read().split(" ")
+    content=f.read().split()
 
 length=int(input("Enter Length of Words:"))
 
@@ -17,5 +17,6 @@ for i in content:
 
 list=list.sort()
 print(list)
+
 
 
