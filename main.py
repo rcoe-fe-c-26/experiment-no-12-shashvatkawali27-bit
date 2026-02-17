@@ -10,13 +10,16 @@ with open("story.txt") as f:
 
 length=int(input("Enter Length of Words:"))
 
-list=[]
+words=[]
 for i in content:
     if(len(i)==length):
-        list.append(i.lower())
+        words.append(i.lower())
 
-list=list.sort()
-print(list)
+words=set(words)
+words=list(words)
+print(words)
+
+
 
 
 
